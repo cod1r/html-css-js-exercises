@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50%;
+  width: 50%;
+  transform: translateX(50%) translateY(50%);
+  min-width: 800px;
+}
+
+.text {
+  font-size: 30px;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.underline {
+  position: absolute;
+  z-index: 0;
+  background-color: red;
+  height: 3%;
+  width: 100%;
+  transform: translateY(75%);
+  clip-path: polygon(10% 10%, 90% 10%, 100% 100%, 0% 100%);
+  min-width: 800px;
+  overflow-x: hidden;
+}
